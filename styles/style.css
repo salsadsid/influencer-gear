@@ -55,6 +55,8 @@ margin:10px 10px;
 }
 .nav-toggler-icon{
     display: none;
+    font-size: 25px;
+    margin-top: 20px;
 }
 
 /* -----------------------*\ 
@@ -350,11 +352,11 @@ hr{
     }
    .navigation{
        position: absolute;
-        top: 120px;
-        right: 120px;
+        top: 130px;
+        right: 115px;
         background-color: snow;
         transform: translateY(-500px);
-        transition: .5s linear;
+        transition: transform .5s linear;
    }
    .nav-toggler-icon{
        display: block;

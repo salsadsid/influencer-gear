@@ -7,6 +7,9 @@
 font-family: 'Manrope', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
+/* <a href='https://www.freepik.com/photos/people'>People photo created by wayhomestudio - www.freepik.com</a> */
+/* <a href='https://www.freepik.com/photos/technology'>Technology photo created by wirestock - www.freepik.com</a> */
+/* <a href='https://www.freepik.com/photos/nature'>Nature photo created by DejaVu Designs - www.freepik.com</a> */
 /* -------------------------------*\ 
     Common Styles and Utilities
 \*--------------------------------*/
@@ -121,10 +124,16 @@ hr{
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
     opacity: .5;
 }
+
+.online-shops-container{
+    margin-top: 60px;
+}
 .online-shops{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
  /* --------------------------*\ 
     popular-collection Styles
@@ -197,6 +206,67 @@ hr{
 }
 .popular-collection-see-more .primary-bottom a{
     color: #E02C6D;
+}
+/* -----------------------*\ 
+    photography-types Styles
+\*------------------------*/
+.photography-types{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.photography-types-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50px;
+}
+.photography-types-header{
+    text-align: center;
+}
+.photography-types-header h3{
+    font-size: 40px;
+    margin: 10px;
+    color: #E02C6D;
+}
+.photography-types-left{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+.photography-types-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    }
+.photography-type{
+    width: 300px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: .4s linear;
+}
+.photography-type:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.photography-type img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.photography-type h4{
+    font-size: 20px;
+    margin: 10px;
+    color: #E02C6D;
+}
+.photography-type p{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 /* -------------------*\ 
     Footer Styles

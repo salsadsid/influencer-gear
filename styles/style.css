@@ -107,7 +107,6 @@ margin:10px 10px;
  }
  .start-journey-graphics{
     display: flex;
-    height: 100vh;
     align-items: center;
     justify-content: center;  
  }
@@ -313,6 +312,9 @@ hr{
     Media Queries
 \*---------------------*/
 
+ /* -------------------*\ 
+    Mobile Devices
+\*---------------------*/
 @media only screen and (max-width:688px){
     .header-container{
         display: flex;
@@ -327,7 +329,9 @@ hr{
     }
     .container{
         width: 100%;
-        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .start-journey{
         display: grid;
@@ -360,9 +364,46 @@ hr{
     }
  
 }
-@media only screen and (min-width:689px) and (max-width:992px){
-    .start-journey{
-        display: none;
-    }
 
+ /* -------------------*\ 
+    Tablet Devices
+\*---------------------*/
+@media only screen and (min-width:689px) and (max-width:992px){
+    
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .start-journey{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+
+    }
+    .online-shops-container {
+        margin-top: 50px;
+    }
+    * 
+    .online-shops{
+       gap:30px;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 30px;
+        padding: 20px;
+    }
+    .photography-types-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 50px;
+    }
+    .photography-types-header{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .footer{
+        width: 100%;
+    }
 }

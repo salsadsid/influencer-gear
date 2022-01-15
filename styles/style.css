@@ -3,13 +3,9 @@
 \*---------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Manrope:wght@500&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap');
 
-/* font-family: 'Inter', sans-serif;
-font-family: 'Manrope', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; */
-/* <a href='https://www.freepik.com/photos/people'>People photo created by wayhomestudio - www.freepik.com</a> */
-/* <a href='https://www.freepik.com/photos/technology'>Technology photo created by wirestock - www.freepik.com</a> */
-/* <a href='https://www.freepik.com/photos/nature'>Nature photo created by DejaVu Designs - www.freepik.com</a> */
+/* Photography Section Images added from https://www.freepik.com */
+
+
 /* -------------------------------*\ 
     Common Styles and Utilities
 \*--------------------------------*/
@@ -26,9 +22,11 @@ body{
     margin: 0 auto;
     padding: 20px;
 }
+
 /* -----------------------*\ 
     Header Styles
 \*------------------------*/
+
 .header-container{
     display: flex;
     justify-content: space-between;
@@ -52,12 +50,21 @@ margin:10px 10px;
     color: #E02C6D;
 }
 
+#nav-toggler{
+    display: none;
+}
+.nav-toggler-icon{
+    display: none;
+}
+
 /* -----------------------*\ 
     Start Journey Styles
 \*------------------------*/
+
 .start-journey{
     display: grid;
     grid-template-columns: repeat(2,1fr); 
+    margin-top:30px ;
 }
 .start-journey-details{
     display: flex;
@@ -72,14 +79,12 @@ margin:10px 10px;
     margin-bottom: 30px;
  }
  .primary-bottom{
-     /* padding: 10px 25px; */
      border-radius: 50px;
      background-color: #E02C6D;
      border: none;
      display: inline-block;
      border:3px solid #E02C6D;
      transition: .3s linear;
-     /* color: #FFFFFF; */
  }
  .fa-arrow-right{
      font-size: 16px;
@@ -111,11 +116,13 @@ margin:10px 10px;
     justify-content: center;  
  }
  .start-journey-graphics img{
-     width: 70%;
+     width: 75%;
  }
+
  /* --------------------------*\ 
     online-shops Styles
 \*----------------------------*/
+
 hr{
     border: 0;
     height: 1px;
@@ -135,9 +142,11 @@ hr{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
  /* --------------------------*\ 
     popular-collection Styles
 \*----------------------------*/
+
 
 .popular-collection{
     margin-top: 80px;
@@ -207,9 +216,11 @@ hr{
 .popular-collection-see-more .primary-bottom a{
     color: #E02C6D;
 }
+
 /* -----------------------*\ 
     photography-types Styles
 \*------------------------*/
+
 .photography-types{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -268,18 +279,21 @@ hr{
     font-weight: 500;
     margin-bottom: 10px;
 }
+
 /* -------------------*\ 
     Footer Styles
 \*--------------------*/
+
 .footer{
-    width: 100%;
     height: 239px;
     background-color: #0A0826;
     text-align: center;
     color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.footer-container{
+    margin-top: 40px;
 }
 .footer h3{
     font-family: 'Poppins', sans-serif;  
@@ -309,13 +323,20 @@ hr{
 }
 
  /* -------------------*\ 
-    Media Queries
+     Media Queries
 \*---------------------*/
 
- /* -------------------*\ 
+ /* ----------------*\ 
     Mobile Devices
-\*---------------------*/
+\*------------------*/
+
 @media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .header-container{
         display: flex;
         align-items: center;
@@ -327,15 +348,28 @@ hr{
        justify-content: center;
        align-items: center;
     }
-    .container{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+   .navigation{
+       position: absolute;
+        top: 120px;
+        right: 120px;
+        background-color: snow;
+        transform: translateY(-500px);
+        transition: .5s linear;
+   }
+   .nav-toggler-icon{
+       display: block;
+   }
+   #nav-toggler:checked ~ .navigation{
+    transform: translateY(0px);
+   }
+
     .start-journey{
         display: grid;
         grid-template-columns: repeat(1,1fr); 
+        grid-row-gap: 40px;
+    }
+    .start-journey-details{
+        order: 2;
     }
     .online-shops-container {
         margin-top: 20px;
@@ -360,17 +394,18 @@ hr{
         margin-bottom: 30px;
     }
     .footer{
-        width: 100%;
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
     }
- 
 }
 
- /* -------------------*\ 
+ /* -----------------*\ 
     Tablet Devices
-\*---------------------*/
+\*-------------------*/
+
+
 @media only screen and (min-width:689px) and (max-width:992px){
-    
-    .container{
+     .container{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -404,6 +439,7 @@ hr{
         margin-bottom: 30px;
     }
     .footer{
-        width: 100%;
-    }
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
+    } 
 }

@@ -182,8 +182,8 @@ hr {
 
 .popular-collection-header {
     text-align: center;
-    font-size: 28px;
-    color: #3A3A3A;
+    font-size: 30px;
+    color: #8D3DAF;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin: 30px;
@@ -315,7 +315,7 @@ hr {
 }
 
 .photography-types-header h3 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 10px;
     color: #8D3DAF;
 }

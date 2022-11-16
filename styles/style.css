@@ -324,7 +324,7 @@ hr {
 .photography-types-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 50px;
+    gap: 50px;
 }
 
 .photography-types-header {
@@ -495,10 +495,11 @@ hr {
     .start-journey {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 40px;
+        gap: 40px;
     }
 
     .start-journey-details {
+        margin: 0 20px;
         order: 2;
     }
 
@@ -506,21 +507,20 @@ hr {
         margin-top: 20px;
     }
 
-    * .online-shops {
+    .online-shops {
         gap: 30px;
     }
 
     .items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 30px;
-        padding: 20px;
+        gap: 30px;
     }
 
     .photography-types-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 50px;
+        gap: 50px;
     }
 
     .photography-types-header {
@@ -553,11 +553,15 @@ hr {
 
     }
 
+    .start-journey-details {
+        margin: 0 20px;
+    }
+
     .online-shops-container {
         margin-top: 50px;
     }
 
-    * .online-shops {
+    .online-shops {
         gap: 30px;
     }
 
@@ -570,7 +574,7 @@ hr {
     .photography-types-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 50px;
+        gap: 50px;
     }
 
     .photography-types-header {
